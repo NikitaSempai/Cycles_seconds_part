@@ -5,14 +5,14 @@ public class Main {
     }
 
     public static void tasks() {
-//        task1();
-//        task2();
-//        task3();
-//        task4();
-//        task5();
-//        task6();
-//        task7();
-//        task8();
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1(){
