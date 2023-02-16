@@ -110,20 +110,18 @@ public class Main {
     public static void task8(){
         System.out.println("Eighth task");
         int year = 2023;
-        int cometYear = 79;
         int beforeCurrentYear = year - 200;
         int afterCurrentYear = year + 100;
         int weNeedThreeDates = 0;
         while (weNeedThreeDates != 3){
             switch (weNeedThreeDates){
-                case 0 : System.out.println(beforeCurrentYear + cometYear);
-                    weNeedThreeDates++;
-                    break;
-                case 1 :  System.out.println(beforeCurrentYear + (cometYear * 2));
-                    weNeedThreeDates++;
-                    break;
-                case 2: System.out.println(afterCurrentYear - cometYear);
-                    weNeedThreeDates++;
+                case 0 : //System.out.println(beforeCurrentYear + cometYear);
+                    for (int i = 0; i < afterCurrentYear; i = i + 79){
+                        if(beforeCurrentYear < i){
+                            System.out.println(i);
+                        }
+                    }
+                    weNeedThreeDates = weNeedThreeDates + 3;
                     break;
                 default:
                     break;
